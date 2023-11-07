@@ -1,0 +1,159 @@
+.header{
+    display: flex;
+    flex-direction: row;
+ justify-content: space-between;
+ height: 55px;
+ border-bottom:1px solid #dedede;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background-color: white;
+ z-index: 100;
+}
+.left-sec{
+    
+    width: 190px;
+    display: flex;
+    align-items: center;
+    
+}
+.hamburger
+{
+    height: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.youtube-logo{
+    height: 20px;
+}
+.middle-sec{ 
+    
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+
+}
+.search-icon{
+    height: 39px;
+    width: 66px;
+    background-color: rgb(240, 240,240);
+    border: 1px solid rgb(192, 192, 192);
+    margin-left: -1px;
+    
+
+}
+.search-img{
+    height: 26px;
+    padding-top: 5px;
+
+}
+.search{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);;
+    border-width: 1px;
+    border-radius: 2px;
+    width: 0px;
+   
+}
+.search::placeholder{
+  
+    font-size: 16px;
+
+}
+.voice-search-icon{
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(245, 245, 245) ;
+    
+
+}
+.voice-img{
+    height: 24px;
+    
+}
+.right-sec{
+    
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.ytapps{
+    height: 24px;
+
+}
+.upload{ height: 24px;}
+.notifications{ height: 24px;
+
+}
+.my-channel{
+    height: 32px;
+    border-radius: 15px;
+    
+}
+.notf{
+    position: relative;
+}
+.notf-no{
+    position: absolute;
+    background-color: rgb(200, 0, 0);
+    color: white;
+   
+    font-size: 11px;
+   
+    border-radius: 10px;
+    right: -5px;
+    top: -2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.search-icon .tool-tip,
+.voice-search-icon .tool-tip
+,.ytapps-div .tool-tip,
+.upload-div .tool-tip,
+.notf .tool-tip{
+   
+background-color: gray;
+color: white;
+font-size: 12px;
+position: absolute;
+bottom: -30px;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 4px;
+padding-bottom: 4px;
+border-radius: 2px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space:nowrap;
+}
+.search-icon:hover .tool-tip,
+.voice-search-icon:hover .tool-tip,
+.ytapps-div:hover .tool-tip,
+.upload-div:hover .tool-tip,
+.notf:hover .tool-tip{
+    opacity: 1;
+}
+.search-icon,.voice-search-icon,.notf,.upload-div,.ytapps-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
